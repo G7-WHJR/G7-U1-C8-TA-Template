@@ -1,31 +1,39 @@
 var ball;
-var topEdge, bottomEdge, leftEdge, rightEdge;
+var edgeT,edgeR, edgeB,edgeL;
 
 function setup() {
   createCanvas(450, 400);
 
-  //ball
+  //ball sprite
   ball = createSprite(150, 250, 15, 15);
   ball.shapeColor = "orange";
 
+  //Top edge
+  edgeT = createSprite(225, 0, 450, 5);
+  edgeT.shapeColor = "gray";
+
+  //Left edge
+  edgeL = createSprite(0, 200, 5, 400);
+  edgeL.shapeColor = "gray";
+
+  //Right edge
+  edgeR = createSprite(450, 200, 5, 400);
+  edgeR.shapeColor = "gray";
+
   //Bottom Edge
-  bottomEdge = createSprite(225, 400, 450, 5);
-  bottomEdge.shapeColor = "gray";
-  bottomEdge.immovable = true;
 
-  //Left Edge
-  leftEdge = createSprite(0, 200, 5, 400);
-  leftEdge.shapeColor = "gray";
-  leftEdge.immovable = true;
-
-  //Right Edge
-  rightEdge = createSprite(450, 200, 5, 400);
-  rightEdge.shapeColor = "gray";
-  rightEdge.immovable = true;
 }
 
 function draw() {
   background("honeydew");
 
+  //move the ball using velocityX and velocityY properties
+  
+
+  //make the ball bounce off the edges
+  
+
   drawSprites();
 }
+
+
